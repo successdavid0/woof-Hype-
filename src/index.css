@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* Mature, balanced design system — mobile-first */
+:root {
+  --color-bg: #0A0A0F;
+  --color-bg-gradient:
+    radial-gradient(ellipse 120% 90% at 30% -10%, rgba(167, 139, 250, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 70% at 85% 30%, rgba(45, 212, 191, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 80% at 5% 80%, rgba(229, 184, 114, 0.05) 0%, transparent 50%);
+  --color-surface: #12121a;
+  --color-surface-elevated: #1a1a24;
+  --color-accent: #323036;
+  --color-text-primary: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-border: #27272f;
+  /* Refined accents — used sparingly */
+  --color-amber: #d4a574;
+  --color-teal: #2dd4bf;
+  --color-violet: #a78bfa;
+  --color-rose: #e879a0;
+  /* Spacing */
+  --section-padding-y: clamp(3.5rem, 10vw, 6rem);
+  --section-padding-x: clamp(1rem, 4vw, 1.5rem);
+  --container-max: 1200px;
+  /* Touch-friendly */
+  --touch-min: 44px;
+}
+
+@theme {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-bg);
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"),
+    var(--color-bg-gradient);
+  background-attachment: fixed;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(15px, 2.5vw, 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Typography — refined, readable */
+.text-display {
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-weight: 600;
+}
+
+.body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.caption {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+/* Touch-friendly interactive elements */
+.touch-target {
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cards — subtle elevation */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-elevated {
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Buttons — mature hover (subtle, no aggressive scale) */
+.btn-primary {
+  min-height: var(--touch-min);
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.btn-primary:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Hide scrollbar for horizontal trait row */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Focus visible for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
