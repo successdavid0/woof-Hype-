@@ -65,7 +65,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08, ease: easing }}
-            className="text-[clamp(3rem,12vw,7rem)] font-bold leading-[0.92] tracking-[-0.04em] text-[var(--color-text-primary)]"
+            className="text-[clamp(2.5rem,11vw,7rem)] font-bold leading-[0.92] tracking-[-0.04em] text-[var(--color-text-primary)]"
           >
             WOOF
             <br />
@@ -76,7 +76,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.22, ease: easing }}
-            className="mt-6 text-base md:text-lg text-[var(--color-text-muted)] max-w-md leading-relaxed"
+            className="mt-5 text-sm sm:text-base md:text-lg text-[var(--color-text-muted)] max-w-md leading-relaxed"
           >
             COMMUNITY FIRST NFT WITH COOL ARTS AND UTILITY FOR ITS HOLDERS AND MORE  
           </motion.p>
@@ -85,11 +85,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.35, ease: easing }}
-            className="mt-8 flex flex-wrap items-center gap-4"
+            className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4"
           >
             <a
               href="#mint"
-              className="inline-flex items-center min-h-[48px] px-7 rounded-full font-semibold text-[#0A0A0F] bg-[var(--color-teal)] hover:opacity-95 active:scale-[0.98] transition-all"
+              className="inline-flex items-center min-h-[44px] sm:min-h-[48px] px-6 sm:px-7 rounded-full font-semibold text-sm sm:text-base text-[#0A0A0F] bg-[var(--color-teal)] hover:opacity-95 active:scale-[0.98] transition-all"
             >
               Mint Now
             </a>

@@ -145,3 +145,54 @@ button:focus-visible {
   outline: 2px solid var(--color-teal);
   outline-offset: 2px;
 }
+
+/* Mobile-first responsive refinements */
+@media (max-width: 640px) {
+  :root {
+    --section-padding-y: clamp(2.5rem, 8vw, 4rem);
+    --section-padding-x: clamp(1rem, 5vw, 1.25rem);
+  }
+
+  .h2 {
+    font-size: clamp(1.25rem, 6vw, 1.75rem);
+  }
+
+  .h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .body {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+
+  .card {
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-elevated {
+    border-radius: 0.75rem;
+  }
+
+  .btn-primary {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Touch devices: show NFT overlay info without requiring hover */
+@media (hover: none) {
+  .nft-overlay {
+    opacity: 1 !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%) !important;
+  }
+  .nft-overlay > * {
+    transform: translateY(0) !important;
+  }
+}
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}

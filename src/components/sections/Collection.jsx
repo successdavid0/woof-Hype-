@@ -53,16 +53,16 @@ export default function Collection() {
           whileInView="show"
           viewport={{ once: true }}
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.05 } } }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mb-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5 mb-10 sm:mb-12"
         >
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
               variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-              className="card rounded-xl p-5 text-center"
+              className="card rounded-lg sm:rounded-xl p-3 sm:p-5 text-center"
               style={{ borderLeft: `3px solid ${statAccents[i]}` }}
             >
-              <p className="text-2xl md:text-3xl font-bold text-[var(--color-text-primary)]">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-[var(--color-text-primary)]">
                 {stat.value}
               </p>
               <p className="caption mt-1">{stat.label}</p>
@@ -101,23 +101,23 @@ export default function Collection() {
           whileInView="show"
           viewport={{ once: true }}
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.05 } } }}
-          className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5 mb-10"
+          className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5 mb-10"
         >
           {samples.map((item) => (
             <motion.div
               key={item.id}
               variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-              className="group relative rounded-xl overflow-hidden card aspect-square"
+              className="group relative rounded-lg sm:rounded-xl overflow-hidden card aspect-square"
             >
               <img
                 src={item.img}
                 alt={`WOOFHYPE #${item.id}`}
                 className="w-full h-full aspect-square object-cover bg-[var(--color-border)]"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2 p-4">
-                <span className="font-mono text-white text-sm">#{item.id}</span>
+              <div className="nft-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity flex flex-col items-end justify-end gap-1.5 sm:gap-2 p-3 sm:p-4">
+                <span className="font-mono text-white text-xs sm:text-sm">#{item.id}</span>
                 <span
-                  className="text-xs px-2 py-1 rounded-md text-[var(--color-bg)]"
+                  className="text-[10px] sm:text-xs px-2 py-1 rounded-md text-[var(--color-bg)]"
                   style={{
                     background:
                       item.rarity === 'Legendary'

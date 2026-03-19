@@ -15,10 +15,10 @@ export default function Mint() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="card-elevated rounded-2xl p-10 sm:p-12 text-center"
+          className="card-elevated rounded-xl sm:rounded-2xl p-6 sm:p-10 md:p-12 text-center"
         >
           <h2 className="h2 text-[var(--color-text-primary)] mb-3">WOOFHYPE Mint</h2>
-          <p className="text-4xl md:text-5xl font-bold text-[var(--color-teal)] mb-4">Coming Soon</p>
+          <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-teal)] mb-4">Coming Soon</p>
           <p className="body text-[var(--color-text-muted)] max-w-sm mx-auto">
             Mint details, date, and contract will be announced soon. Join our Discord to stay updated.
           </p>

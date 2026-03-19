@@ -10,9 +10,15 @@ const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ];
 
-export default function Nav({ discordUrl = '[DISCORD_INVITE_URL]' }) {
+export default function Nav({ discordUrl = 'https://discord.gg/9shKmsfV' }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
+  const [showWalletToast, setShowWalletToast] = useState(false);
+
+  const handleConnectWallet = () => {
+    setShowWalletToast(true);
+    setTimeout(() => setShowWalletToast(false), 2500);
+  };
 
   return (
     <nav
@@ -58,6 +64,7 @@ export default function Nav({ discordUrl = '[DISCORD_INVITE_URL]' }) {
             type="button"
             className="btn-primary border text-sm font-medium text-[var(--color-text-primary)]"
             style={{ borderColor: 'var(--color-border)' }}
+            onClick={handleConnectWallet}
           >
             Connect Wallet
           </button>
@@ -85,7 +92,8 @@ export default function Nav({ discordUrl = '[DISCORD_INVITE_URL]' }) {
           >
             <button
               type="button"
-              className="absolute top-4 right-4 touch-target text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] rounded-lg"
+              className="absolute right-4 touch-target text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] rounded-lg"
+              style={{ top: 'max(1rem, env(safe-area-inset-top))' }}
               onClick={() => setMobileOpen(false)}
               aria-label="Close menu"
             >
@@ -101,7 +109,7 @@ export default function Nav({ discordUrl = '[DISCORD_INVITE_URL]' }) {
                 {link.label}
               </a>
             ))}
-            <div className="flex flex-col gap-3 w-full max-w-[280px] mt-4">
+            <div className="flex flex-col gap-3 w-full max-w-[280px] mt-6">
               <a
                 href={discordUrl}
                 target="_blank"
@@ -115,10 +123,24 @@ export default function Nav({ discordUrl = '[DISCORD_INVITE_URL]' }) {
                 type="button"
                 className="btn-primary w-full border font-medium text-[var(--color-text-primary)]"
                 style={{ borderColor: 'var(--color-border)' }}
+                onClick={handleConnectWallet}
               >
                 Connect Wallet
               </button>
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {showWalletToast && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.95 }}
+            transition={{ duration: 0.25 }}
+            className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-full text-sm font-semibold text-[#0A0A0F] bg-[var(--color-teal)] shadow-lg shadow-black/30"
+          >
+            Coming Soon
           </motion.div>
         )}
       </AnimatePresence>

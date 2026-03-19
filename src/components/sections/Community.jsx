@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const quotes = [
-  { text: '[COMMUNITY_MEMBER_QUOTE]', handle: '@[HANDLE]' },
-  { text: '[COMMUNITY_MEMBER_QUOTE]', handle: '@[HANDLE]' },
-  { text: '[COMMUNITY_MEMBER_QUOTE]', handle: '@[HANDLE]' },
+  { text: 'WOOFHYPE is a community driven project that has it\'s community first, with where we have like minded individuals who are looking to build there knowledge, presence and overall share there experiences with the community.', handle: '@Bigsnow' },
+  { text: 'WOOFHYPE is an amazing project that is going to be a game changer in the web3 space, cause it respects the initial culture of the web3 space which is the community love', handle: '@Taroooo' },
+  { text: 'WOOFHYPE has proven its self to be a project with much potential and actual love for the build', handle: '@Drewpack' },
 ];
 
 export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
@@ -32,7 +32,7 @@ export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
           viewport={{ once: true }}
           className="body text-[var(--color-text-muted)] max-w-xl mx-auto mb-5"
         >
-          [1–2 sentences about what the Discord offers — alpha, giveaways, holder perks]
+          Woof hype is here to stay and develop the community 
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
@@ -49,7 +49,7 @@ export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="btn-primary inline-flex items-center justify-center min-w-[200px] text-[#0A0A0F] bg-[var(--color-teal)]"
+          className="btn-primary inline-flex items-center justify-center min-w-[180px] sm:min-w-[200px] text-[#0A0A0F] bg-[var(--color-teal)]"
         >
           Join Discord
         </motion.a>
@@ -68,10 +68,10 @@ export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
             Twitter / X
           </a>
           <a
-            href="#"
+            href="https://discord.gg/9shKmsfV"
             className="text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors text-sm min-h-[var(--touch-min)] flex items-center"
           >
-            [PLATFORM_3]
+            Discord 
           </a>
         </motion.div>
 
@@ -80,13 +80,13 @@ export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
           whileInView="show"
           viewport={{ once: true }}
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 mt-8 sm:mt-12"
         >
           {quotes.map((q, i) => (
             <motion.div
               key={i}
               variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-              className="card rounded-xl p-5 text-left border border-[var(--color-border)]"
+              className="card rounded-lg sm:rounded-xl p-4 sm:p-5 text-left border border-[var(--color-border)]"
             >
               <p className="body text-[var(--color-text-primary)] mb-2">&ldquo;{q.text}&rdquo;</p>
               <p className="caption">{q.handle}</p>

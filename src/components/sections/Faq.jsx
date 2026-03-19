@@ -3,14 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const items = [
-  { q: 'What is WOOFHYPE?', a: '[PROJECT_DESCRIPTION — 2 to 3 sentences about what makes this collection unique]' },
-  { q: 'How do I mint?', a: 'Connect your [NETWORK] wallet (e.g. MetaMask), click \'Mint Now\', select quantity, and confirm the transaction. Make sure you have enough [CURRENCY] to cover the mint price plus gas fees.' },
-  { q: 'What is the mint price?', a: 'The public mint price is [PRICE]. Allowlist members receive a discounted price of [AL_PRICE].' },
-  { q: 'How do I get on the allowlist?', a: '[ALLOWLIST_INSTRUCTIONS — e.g. Join our Discord and complete the allowlist tasks in #allowlist-info]' },
-  { q: 'What blockchain is this on?', a: 'WOOFHYPE lives on [NETWORK]. You\'ll need a compatible wallet and [CURRENCY] to mint.' },
-  { q: 'What can I do with my NFT?', a: '[UTILITY_DESCRIPTION — holder perks, access, commercial rights, etc.]' },
-  { q: 'Is there a secondary market?', a: 'Yes, WOOFHYPE will be tradeable on [MARKETPLACE, e.g. OpenSea / Blur] after mint.' },
-  { q: 'When is the reveal?', a: '[REVEAL_INFO — e.g. Instant reveal / 48 hours after mint / TBD]' },
+  { q: 'What is WOOFHYPE?', a: 'It\'s a community driven project that has it\'s community first, with where we have like minded individuals who are looking to build there knowledge, presence and overall share there experiences with the community.' },
+  { q: 'How do I mint?', a: 'Informations this is coming soon before mint' },
+  { q: 'What is the mint price?', a: 'The offcial minting price will be announced soon before mint' },
+  { q: 'How do I get on the Whitelist?', a: 'The white list mint will be gotten through so games that will be out soon and will be communicated soon ' },
+  { q: 'What blockchain is this on?', a: 'WOOFHYPE lives on Ethereum. You\'ll need a compatible wallet to mint.' },
+  { q: 'What can I do with my NFT?', a: 'NFTs will give special assess to specific tools and much more' },
+  { q: 'Is there a secondary market?', a: 'Yes, WOOFHYPE will be tradeable on OpenSea and others after mint day.' },
 ];
 
 export default function Faq() {
