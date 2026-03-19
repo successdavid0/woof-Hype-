@@ -4,9 +4,11 @@ const quotes = [
   { text: 'WOOFHYPE is a community driven project that has it\'s community first, with where we have like minded individuals who are looking to build there knowledge, presence and overall share there experiences with the community.', handle: '@Bigsnow' },
   { text: 'WOOFHYPE is an amazing project that is going to be a game changer in the web3 space, cause it respects the initial culture of the web3 space which is the community love', handle: '@Taroooo' },
   { text: 'WOOFHYPE has proven its self to be a project with much potential and actual love for the build', handle: '@Drewpack' },
+  { text: 'WOOFHYPE is going to make NFTs great again in the best way', handle: '@Fridge' },
+
 ];
 
-export default function Community({ discordUrl = '[DISCORD_INVITE_URL]' }) {
+export default function Community({ discordUrl = 'https://discord.gg/9shKmsfV' }) {
   return (
     <section
       id="community"
