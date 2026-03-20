@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const items = [
-  { q: 'What is WOOFHYPE?', a: 'It\'s a community driven project that has it\'s community first, with where we have like minded individuals who are looking to build there knowledge, presence and overall share there experiences with the community.' },
-  { q: 'How do I mint?', a: 'Informations this is coming soon before mint' },
-  { q: 'What is the mint price?', a: 'The offcial minting price will be announced soon before mint' },
-  { q: 'How do I get on the Whitelist?', a: 'The white list mint will be gotten through so games that will be out soon and will be communicated soon ' },
-  { q: 'What blockchain is this on?', a: 'WOOFHYPE lives on Ethereum. You\'ll need a compatible wallet to mint.' },
-  { q: 'What can I do with my NFT?', a: 'NFTs will give special assess to specific tools and much more' },
-  { q: 'Is there a secondary market?', a: 'Yes, WOOFHYPE will be tradeable on OpenSea and others after mint day.' },
+  { q: 'What is WOOFHYPE?', a: 'WOOFHYPE is a community-first pfp project built around the builder’s den — a place for builders, creators, and collectors to connect, share progress, and grow together.' },
+  { q: 'How do I mint?', a: 'Mint happens on opensea — once it’s live, you’ll connect your wallet, select quantity, and confirm the transaction.' },
+  { q: 'What is the mint price?', a: 'Mint price will be announced with the next launch details — we’re keeping it affordable and builder-friendly.' },
+  { q: 'How do I get on the Whitelist?', a: 'Get involved in the community (discord + x), show up consistently, and join collabs/activations when they’re announced.' },
+  { q: 'What blockchain is this on?', a: 'WOOFHYPE is on ethereum.' },
+  { q: 'What can I do with my NFT?', a: 'Your WOOF acts as your pass into the builder’s den community and future holder perks like early access to drops and collabs.' },
+  { q: 'Is there a secondary market?', a: 'Yes — once minted, woofs can be bought and sold on secondary marketplaces like opensea.' },
+  { q: 'When is the mint date?', a: 'Mint timing will be announced — stay connected in discord and on x so you don’t miss when the next mint goes live.' },
 ];
 
 export default function Faq() {

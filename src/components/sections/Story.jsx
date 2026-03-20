@@ -41,23 +41,32 @@ export default function Story() {
               THE VISION OF WOOFHYPE
             </motion.h2>
             <motion.p variants={item} className="body text-[var(--color-text-muted)]">
-              It's a community driven project that has it's community first, with where we have like minded individuals who are looking to build there knowledge, 
-              presence and overall share there experiences with the community. <br/><br/>
-              We have people that specialize in every aspect of web3 that will then build to helping the people understand the value of web3 and connections to grow there knowledge. <br/>
+            woofhype is a community-driven project. a place for like minded people who want to grow their knowledge, build their presence, and share real experiences with others.
+            <br/><br/>we’re bringing together people across every lane of web3; builders, artists, traders, creators, and collectors — so members can learn, connect, and level up through the power of community.
             </motion.p>
             <motion.p variants={item} className="body text-[var(--color-text-muted)]">
               <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">UTILITY BACKING OUR PROJECT</span>
-              Aside the communities massive drive to building a solid and stable ecosystem and due to how we believe in long term growth. <br /><br/>
-              We will be rewarding our community OGs not just those that show up in the discord but also those that show up on our spaces. <br/><br/>
-
-            1. We who’ll be hosting educational spaces with amazing KOLS that will help the community build knowledge in different areas similar to onboarding. <br/><br/>
-            2. Collaborations with projects will lead to different opportunities and we plan to reward our communities with those opportunities (jobs, early access and much more) <br/><br/>
-            3. Frequent giveaways for our community and active members <br/><br/>
-            4. When we do finally plan to launch our token project an immediate governance will be given to the holders and allocations as well. <br/><br/>
-            
-
-              We know that all these will take time, money and energy. we assure you that we are not here for just the hype of the game but we are going to be building long term and we will definitely make the community proud. <br/><br/>
-              Woof hype is a purely community pushed project and we will show the world what a strong community is all about.
+              we’re building for the long term. utility won’t be rushed — it will be introduced intentionally, based on what the community actually values.
+              <br/><br/>
+                we’ll be rewarding our OGs, not just the people who are active in discord, but also those who show up consistently in spaces and contribute in real ways.
+              <br/><br/>
+                here’s what we’re building toward:
+              <br/><br/>
+                <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">Educational spaces</span>
+                we’ll host educational spaces with strong KOLs, founders, developers and many more to help onboard the community and build knowledge across different areas of web3.
+              <br/><br/>
+                <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">Collaborations + opportunities</span>
+                partnerships with aligned projects will lead to real opportunities for our community — collabs, early access, and more.
+              <br/><br/>
+                <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">Giveaways + community rewards</span>
+                frequent giveaways and rewards for active members who consistently show up and contribute.
+              <br/><br/>
+                <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">Future governance + allocations</span>
+              when we launch a token (if/when it makes sense), holders will receive governance and allocations.
+              <br/><br/>  
+                we know this takes time, energy and resources, but we’re not here for short term hype. we’re building something real, and we’re committed to making the community proud.
+                <br/><br/>
+            <span className="block text-lg md:text-xl font-bold text-[var(--color-text-primary)] mb-2">woofhype is community-powered — and we’ll show what a strong community can really look like.</span>
             </motion.p>
           </motion.div>
           <motion.div
@@ -102,10 +111,10 @@ export default function Story() {
             <div className="space-y-3">
               <p className="h3 text-[var(--color-text-primary)]">Roadmap</p>
               <ul className="space-y-3 border-l-2 pl-4 sm:pl-5 text-xs sm:text-sm" style={{ borderColor: 'var(--color-violet)' }}>
-                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 1:</strong> Community Building — Growth of the community to a strong stand and have a strong presence in the crypto space</li>
-                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 2:</strong> Collaborations with projects and communities — Collaborations with projects and communities to help grow the community and the project</li>
-                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 3:</strong> NFT launch — NFT launch for the public to mint and have a strong community behind the project</li>
-                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 4:</strong> Coming soon — .......</li>
+                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 1:</strong> Community Building — Grow the community into a strong, consistent presence across web3, both on x and in discord.</li>
+                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 2:</strong> Collaborations + Partnerships — Partner with aligned projects and communities to expand reach, create opportunities, and bring more value to holders.</li>
+                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 3:</strong>  Next launch — Launch the next woofhype drop with a clearer direction, stronger narrative, and a better mint experience for everyone.</li>
+                <li className="text-[var(--color-text-primary)]"><strong className="text-[var(--color-violet)]">Phase 4:</strong> Coming Soon — we’ll announce phase 4 once phases 1–3 are actively running and the community helps shape what’s next.</li>
               </ul>
             </div>
           </div>
